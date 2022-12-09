@@ -5,19 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kenia&family=Roboto+Mono&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet"> 
   <title>Mathapalooza 2000</title>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1 class="header__title">Mathapalooza 2000</h1>
-      <p class="header__text">(If you're looking for Mathapalooza 1000, you've come to the wrong place)</p>
+      <h1 class="title" id="header__title">Mathapalooza 2000</h1>
+      <p id="header__text">(If you're looking for Mathapalooza 1000, you've come to the wrong place)</p>
     </div>
   </header>
-  <main class="instructions">
-    <div class="container">
-      <h2>Instructions:</h2>
-      <ul>
+  <main>
+    <div class="container instructions">
+      <h2 class="section-title">Instructions:</h2>
+      <ul id="list-rules">
         <li>You will be given 5 random mathemmatics questions to answer</li>
         <li>Correct answers will gain you points</li>
         <li>Incorrect answers will cost you points</li>
@@ -25,20 +28,21 @@
       </ul>
     </div>
   </main>
-  <section class="container gamezone">
-    <div class="container" id="gamezone__title">
-      <h2 class="">Ready to begin?</h2>
-      <button id="start-game">Start</button>
-    </div>
-
-    <div class="container" id="gamezone__question">
-      <h2 id="gamezone__question--title"></h2>
-      <p id="gamezone__question--text"></p>
-      <input type="number" id="gamezone__question--input">
-      <button id="check-btn">Check</button>
-      <button id="hint-btn">Hint</button>
-      <p id="gamezone__question--feedback"></p>
-      <button id="next-btn">Next</button>
+  <section class="container">
+    <div class="gamezone">
+      <div id="gamezone__title">
+        <h2 class="section-title">Ready to begin?</h2>
+        <button id="start-game">Start</button>
+      </div>
+      <div id="gamezone__question">
+        <h2 class="section-title" id="gamezone__question--title">Question Title</h2>
+        <p id="gamezone__question--text">Question text?</p>
+        <input type="number" id="gamezone__question--input">
+        <button id="check-btn">Check</button>
+        <button id="hint-btn">Hint</button>
+        <p id="gamezone__question--feedback"></p>
+        <button id="next-btn">Next</button>
+      </div>
     </div>
   </section>
   
