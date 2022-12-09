@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mathapalooza 2000</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="header__title">Mathapalooza 2000</h1>
+      <p class="header__text">(If you're looking for Mathapalooza 1000, you've come to the wrong place)</p>
+    </div>
+  </header>
+  <main class="instructions">
+    <div class="container">
+      <h2>Instructions:</h2>
+      <ul>
+        <li>You will be given 5 random mathemmatics questions to answer</li>
+        <li>Correct answers will gain you points</li>
+        <li>Incorrect answers will cost you points</li>
+        <li>If you need help, you can use hints ... but at a price</li>
+      </ul>
+    </div>
+  </main>
+  <section class="container gamezone">
+    <div class="container" id="gamezone__title">
+      <h2 class="">Ready to begin?</h2>
+      <button id="start-game">Start</button>
+    </div>
+
+    <div class="container" id="gamezone__question">
+      <h2 id="gamezone__question--title"></h2>
+      <p id="gamezone__question--text"></p>
+      <input type="number" id="gamezone__question--input">
+      <button id="check-btn">Check</button>
+      <button id="hint-btn">Hint</button>
+      <p id="gamezone__question--feedback"></p>
+      <button id="next-btn">Next</button>
+    </div>
+  </section>
+  
+</body>
+</html>
