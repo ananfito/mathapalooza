@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kenia&family=Roboto+Mono&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&family=Source+Sans+Pro:wght@300;400&family=Zen+Dots&display=swap" rel="stylesheet">
   <title>Mathapalooza 2000</title>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1 class="title" id="header__title">Mathapalooza 2000</h1>
+      <h1 class="container title" id="header__title">Mathapalooza 2000</h1>
       <p id="header__text">(If you're looking for Mathapalooza 1000, you've come to the wrong place)</p>
     </div>
   </header>
@@ -35,8 +35,8 @@
         <button id="start-game">Start</button>
       </div>
       <div id="gamezone__question">
-        <h2 class="section-title" id="gamezone__question--title">Question Title</h2>
-        <p id="gamezone__question--text">Question text?</p>
+        <h2 id="gamezone__points">Points: 0</h2>
+        <h3 class="section-title" id="gamezone__question">Question text?</h3>
         <input type="number" id="gamezone__question--input">
         <button id="check-btn">Check</button>
         <button id="hint-btn">Hint</button>
@@ -45,6 +45,7 @@
       </div>
     </div>
   </section>
+  <script src="app.js"></script>
   
 </body>
 </html>

@@ -7,12 +7,12 @@
 :root {
   /* FONTS */
   /* font families */
-  --ff-title: "Kenia", Times;
+  --ff-title: "Zen Dots", Times;
   --ff-section: "Bebas Neue", Times;
   --ff-p: "Roboto Mono", Arial, Helvetica;
   /* font sizes */
   --fs-p: 1.1rem;
-  --fs-title: 5rem;
+  --fs-title: 3rem;
   --fs-section: 2rem;
 }
 
@@ -73,8 +73,8 @@ button {
   color: #dcdcdc; /* Gainsboro */
   text-transform: uppercase;
   padding: 0.5em 1em;
-  font-weight: bolder;
   font-family: var(--ff-section);
+  font-size: 1rem;
   letter-spacing: 0.1em;
   border-radius: 10%;
 }
