@@ -11,15 +11,18 @@
   --ff-section: "Bebas Neue", Times;
   --ff-p: "Roboto Mono", Arial, Helvetica;
   /* font sizes */
-  --fs-p: 1.1rem;
+  --fs-p: 1.5rem;
   --fs-title: 3rem;
-  --fs-section: 2rem;
+  --fs-section: 2.5rem;
+  /* font weights */
+  --fw-p: 500;
 }
 
 body { 
   margin: 0;
   font-family: var(--ff-p);
   font-size: var(--fs-p);
+  font-weight: var(--fw-p);
   text-align: center;
 }
 
@@ -50,6 +53,7 @@ main {
 .section-title {
   font-family: var(--ff-section);
   font-size: var(--fs-section);
+  letter-spacing: 2px;
 }
 
 .container {
@@ -65,6 +69,15 @@ main {
 .gamezone {
   background-color: #838996; /* Roman Silver */
   padding: 0.5em 1em;
+  margin: 1em 0 2em 0;
+}
+
+#gamezone__points {
+  font-family: var(--ff-title);
+}
+
+#gamezone__question--input {
+  height: 2.5em;
 }
 
 button {
@@ -77,4 +90,5 @@ button {
   font-size: 1rem;
   letter-spacing: 0.1em;
   border-radius: 10%;
+  cursor: pointer;
 }
