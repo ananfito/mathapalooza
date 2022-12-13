@@ -7,6 +7,7 @@ const questions = {
   answer: [-779, 1839, -908, 104, -7, 6, 0.8, 8, 81, 1.625]
 }
 var points = 0;
+let randomArr = [];
 let randomNum = Math.floor( Math.random() * questions["question"].length);
 let answerCorrect = false;
 let hintGiven = false;
@@ -35,11 +36,17 @@ nextBtn.addEventListener("click", nextQuestion);
 
 // FUNCTIONS 
 function startGame() {
-  randomNum = Math.floor( Math.random() * questions["question"].length);
+  console.log("start button clicked. randomArr:", randomArr); // DEL
+  for (let i = 0; i<10; i++) {
+    randomNum = Math.floor( Math.random() * questions["question"].length);
+    randomArr.push(randomNum);
+  };
+  console.log("for loop complete. randomArr:", randomArr); // DEL
   gamezoneTitle.innerText = "";
   gamezoneQuestion.setAttribute("style", "");
   pointsTxt.innerText = `Points: ${points}`;
-  questionTxt.innerText = questions["question"][randomNum];
+  console.log("last index of randomArr:",randomArr[randomArr.length - 1]);
+  questionTxt.innerText = questions["question"][randomArr[randomArr.length - 1]];
   inputAnswer.value = "";
 };
 
@@ -81,3 +88,16 @@ function nextQuestion() {
   questionTxt.innerText = questions["question"][randomNum];
   
 };
+
+// NOTE:
+/* 
+
+The random number generation code allows for the possiblity of the same number coming up twice (or more) 
+
+BUT ...
+
+I want it to choose 3 *DIFFERENT* random numbers.
+
+BUG: Hint button still works on a 'win'
+
+*/
