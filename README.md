@@ -1,4 +1,4 @@
-# Mathapalooza
+# Mathapalooza [WORK-IN-PROGRESS]
  A mathematical quiz game with randomly drawn questions. 
 
  ## Contents
